@@ -1,0 +1,364 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.html {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif, "poppins";
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  gap: 150px;
+  background-color: white;
+  height: 60px;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 50px;
+  cursor: pointer;
+}
+
+.header-right {
+  position: fixed; 
+  top: 10px;
+  right: 10px;
+  display: flex;
+  align-items: center;
+  z-index: 1000;
+}
+
+
+.profile-box {
+  display: flex;
+  align-items: center;
+  background-color: white;
+}
+
+.pic {
+  height: 40px;
+  width: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.Cris {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.Sample {
+  font-size: 12px;
+  color: #555;
+}
+
+.down-arrow {
+  height: 15px;
+  width: auto;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.bell {
+  height: 25px;
+  width: auto;
+  cursor: pointer;
+}
+
+.header input {
+  padding: 5px 50px 5px 10px;
+  border-radius: 5px;
+  border: 1px solid black;
+  height: 30px;
+  width: 250px;
+}
+
+.aside {
+  padding: 20px;
+  position: relative;
+  height: 100vh;
+  width: 250px;
+  background-color: white;
+  position: sticky;
+}
+
+.aside ul {
+  list-style-type: none;
+}
+
+.aside ul li {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  cursor: pointer;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.aside ul li img {
+  height: 20px;
+  width: 20px;
+}
+.aside ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  padding: 10px;
+}
+
+.hero-contents {
+  background-color: grey;
+  border: transparent;
+  display: flex;
+  border-radius: 40px 0 0 0;
+  
+}
+
+.hero-contents:hover {
+    color: black;
+    transition: color 0.3s ease;
+}
+.online-box {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+}
+.online-list {
+  display: flex;
+  gap: 5px;
+}
+.online-list > img {
+  height: 40px;
+  width: 40px;
+  object-fit: cover;
+  border-radius: 100%;
+}
+.circle {
+  background-color: rgb(141, 141, 255);
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+  color: rgb(46, 46, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bottom-aside {
+  display: flex;
+  position: absolute;
+  bottom: 30px;
+  width: 90%;
+  flex-direction: column;
+}
+
+.bottom-aside > div {
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  gap: 10px;
+  width: 90%;
+  cursor: pointer;
+  padding: 10px 5px;
+}
+.bottom-aside > div:hover {
+  background-color: rgb(245, 245, 245);
+}
+.bottom-aside > div > img {
+  height: 20px;
+  width: 20px;
+}
+
+.bottom-aside > div > a {
+  text-decoration: none;
+  color: black;
+}
+
+.user-btn{
+    transition: 0.5s all ease;
+}
+
+.user-btn a:hover,
+.user-btn a.active{
+    color: orangered;
+}
+
+.bottom-aside {
+  transition: 0.5s all ease;
+}
+
+.bottom-aside a:hover,
+.bottom-aside a.active {
+  color: orangered;
+}
+
+.dropdown {
+  display: inline-block;
+}
+
+.dropdown button{
+  background-color: white;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+
+}
+
+.dropdown a {
+  display: block;
+  color: black;
+  text-decoration: none;
+  padding: 10px 15px;
+}
+
+.dropdown .content{
+  background-color: white;
+  position: absolute;
+  min-width: 100px;
+  box-shadow: 2px;
+}
+.dropdown:hover .content{
+  display: block;
+}
+.dropdown:hover button{
+  background-color: white;
+}
+.dropdown a:hover{
+  background-color: white;
+}
+
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.container {
+  display: flex;
+  max-width: 1200px;
+  margin: 20px auto;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Left Section */
+.left-section {
+  flex: 3;
+}
+
+.continue-reading, .trending-now {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.continue-reading .book-info {
+  display: flex;
+  gap: 20px;
+}
+
+.continue-reading img {
+  width: 120px;
+  border-radius: 10px;
+}
+
+.continue-reading button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.trending-now .books {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.book-card {
+  text-align: center;
+}
+
+.book-card img {
+  width: 100px;
+  border-radius: 10px;
+}
+
+.book-card p {
+  margin: 10px 0 0;
+}
+
+/* Right Section */
+.right-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.join-community {
+  background-color: #4caf50;
+  color: white;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+}
+
+.join-community button {
+  background-color: white;
+  color: #4caf50;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.book-of-the-year {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.book-of-the-year ul {
+  list-style: none;
+  padding: 0;
+}
+
+.book-of-the-year li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.rank {
+  background-color: #4caf50;
+  color: white;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
